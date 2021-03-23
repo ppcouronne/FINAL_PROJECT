@@ -1,0 +1,419 @@
+/* ===== DESKTOP FIRST ===== */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+*{
+box-sizing: border-box;
+margin:0;
+padding:0;}
+
+/* ==== GENERAL CONTENT ==== */
+
+.parent {
+  background-color: #E9E3E3;
+      padding: 20px;
+      width:100%;
+      min-height:100vh;
+      height:auto;
+      flex-flow: row wrap;
+    }
+
+.art {
+      padding:25px 0 25px;
+      width:100%;
+      min-height:50vh;
+      height: auto;
+      display: flex;
+      align-items: center;
+    }
+
+.video {
+		  width:100%;
+		  display: flex;
+		  flex-wrap: wrap;
+		  overflow: hidden;
+		}
+/* ==== NAVIGATION INFO ==== */
+
+nav {
+  background-color: #C2EEFB;
+  text-align: center;
+  display:flex;
+  text-decoration: none;
+}
+
+nav a:link {
+  font-size: 1em;
+  padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+	text-transform: uppercase;
+	font-weight: bolder;
+  color: #fff;
+  flex-grow: 1;
+  justify-content: space-between;
+  transition: all .4s;
+}
+
+nav a:visited {
+  color: #black;
+}
+
+nav a:hover {
+  color: #000;
+  background-color: #E9E3E3;
+}
+
+nav a:active {
+  background-color: #fff;
+  color: cadetblue;
+}
+
+/* === INDEX / HOME PAGE === */
+.container{
+    width:100%;
+    height:100vh;
+		background-color: #E9E3E3;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;}
+
+.aside img{
+		  width: 100%;
+		  padding: 20px;
+		  }
+
+.art article{
+		    padding: 20px;
+		  }
+
+/* === SERVICES PAGE ==== */
+#offered  {
+  background: url(../images/services.jpg) no-repeat center center;
+  background-size: cover;
+	background-color: #E9E3E3;
+  min-height: 50vh;
+  height: auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+.serviceart {
+      padding:25px;
+    }
+
+/* ====CONTACT PAGE ==== */
+
+#contact {
+  min-height: 50vh;
+  height:auto;
+  background: url(../images/contact.png)no-repeat center center;
+  background-size:contain;
+	background-color: #E9E3E3;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+#contact header {
+  background: url(../images/king.jpg) no-repeat center center;
+  background-size: contain;
+	background-color: #E9E3E3;
+  min-height: 50vh;
+  height:auto;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+
+/* ==== CONTACT PAGE FORM ==== */
+
+.form {
+  padding: 20px;
+  min-height: 80vh;
+  display: flex;
+  background: url(../images/formback.jpg) no-repeat center center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.form form {
+  width: 100%;
+}
+
+.form form input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  opacity: 0.85;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+input:hover,
+input:focus {
+  opacity: 1;
+}
+
+/* style the submit button */
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* ==== CONTACT PAGE FORM-ANIMATION ==== */
+.slide-in-blurred-top {
+	-webkit-animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top 1s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+}
+@-webkit-keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-blurred-top {
+  0% {
+    -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+            transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+    -webkit-transform-origin: 50% 0%;
+            transform-origin: 50% 0%;
+    -webkit-filter: blur(40px);
+            filter: blur(40px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+            transform: translateY(0) scaleY(1) scaleX(1);
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-filter: blur(0);
+            filter: blur(0);
+    opacity: 1;
+  }
+}
+
+/*  ==== PAY PER CLICK PAGE ==== */
+#PPC header{
+  min-height: 50vh;
+  height:auto;
+  background: url(../images/ppcads.jpg)no-repeat center center;
+  background-size:cover;
+	background-color: #E9E3E3;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+/*  ==== SEO PAGE ==== */
+
+#SEO header {
+min-height:50vh;
+height:auto;
+  background: url(../images/seoscreen.jpg)no-repeat center center;
+  background-size:cover;
+	background-color: #E9E3E3;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+/*  ==== SOCIAL MEDIA MARKETING PAGE ==== */
+
+#Social {
+  background-color: #E9E3E3;
+}
+
+.Social {
+    width:100%;
+    height:50vh;
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;}
+
+/*  ==== CONTENT MARKETING PAGE ==== */
+
+#Content header {
+min-height:50vh;
+height:auto;
+  background: url(../images/king.jpg)no-repeat center center;
+  background-size:contain;
+	background-color: #E9E3E3;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  align-items: center;
+}
+#Content article {
+  padding: 20px;
+}
+article h1 {
+	font-size: 36px;
+	font-family: Bangers;
+	padding: 5px;
+	text-align: center;
+	text-transform:uppercase;
+	font-weight: lighter;
+}
+
+article h2 {
+	padding: 5px;
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+/* ==== CONTENT MARKETING GRID ==== */
+
+.grid {
+  /* border: 5px solid #fff; */
+  width: 100%;
+  height:100vh;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows:30% 36% 33%;
+  grid-gap:10px;
+}
+
+.g1 {
+  background: url(../images/case.jpg) no-repeat center center;
+  background-size:contain;
+}
+
+.g2 {
+  background: url(../images/encase.jpg) no-repeat center center;
+  background-size:contain;
+}
+
+.g3 {
+  background: url(../images/discount.png) no-repeat center center;
+  background-size:contain;
+}
+.g4 {
+  background: url(../images/sold.png) no-repeat center center;
+  background-size:contain;
+}
+.g5 {
+  background: url(../images/time.png) no-repeat center center;
+  background-size:contain;
+}
+.g6 {
+  background: url(../images/cape.jpg) no-repeat center center;
+  background-size: contain;
+}
+
+
+/* ==== CARD DESIGN INFO FOR - INDEX + SERVICES PAGE  ==== */
+
+.services {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+figure {
+  min-width: 20%;
+  background: #0072B3;
+  padding:20px;
+  margin:20px;
+  box-shadow:2px 2px 8px #333;
+  transition: all .7s;
+}
+
+figure img {
+  width:100%;
+}
+
+figure h4 {
+  text-align: center;
+  padding:20px;
+}
+
+figure a:link{
+  text-decoration: none;
+}
+
+
+figure a:visited{
+  text-decoration: underline;
+  color:black;
+}
+
+figure :hover{
+  text-decoration: none;
+  box-shadow:2px 2px 25px #8159D9;
+  transform-origin: bottom;
+  transform: scale(1.1);
+}
+
+figcaption {
+  color:black;
+  text-align: center;
+  padding:15px;
+}
+
+
+
+/* ====+++++++++++ MEDIA QUERIES +++++++++++++==== */
+/* === MOBILE & TABLET VIEW COMBINED=== */
+@media only screen and (max-width:1000px) {
+  .parent {align-content: center;
+  flex-direction:column;}
+
+
+  .form form {
+    width:50%;
+  }
+
+.navbar{
+    flex-direction: column;
+  }
+  .footer {
+    flex-direction: column;
+  }
+
+  .art  {
+    flex-direction: column;
+  }
+
+.services {
+  flex-direction: column;
+  }
+
+  .channels{  flex-direction: column;
+}
+
+/* ==== FOOTER INFORMATION ==== */
+.construction img{
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+}
